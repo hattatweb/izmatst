@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Website-Report – IZ Uigurisches Restaurant Mannheim</title>
+  <link rel="icon" type="image/png" href="../assets/images/extra/icon-48.png">
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    :root{--gold:#f6b443;--ink:#1b1b1b;--line:#e2dccf}
+    body{margin:0;font-family:'Helvetica Neue',Arial,sans-serif;color:var(--ink);background:#efeae0;line-height:1.5}
+    .bar{position:sticky;top:0;background:#000;color:#fff;padding:10px 16px;display:flex;gap:12px;align-items:center;z-index:5}
+    .bar button{font:inherit;background:var(--gold);border:0;border-radius:8px;padding:10px 16px;font-weight:700;cursor:pointer}
+    .bar a{color:#ddd}
+    .sheet{max-width:860px;margin:18px auto;background:#fff;padding:36px 40px;border-radius:6px}
+    .cover{background:#000;color:#fff;text-align:center;padding:70px 30px}
+    .cover img{width:90px;height:auto}.cover h1{color:var(--gold);font-size:2rem;margin:20px 0 6px}
+    .cover p{margin:4px 0;color:#ddd}
+    h2{font-size:1.35rem;border-bottom:3px solid var(--gold);padding-bottom:6px;margin:0 0 14px}
+    h3{margin:18px 0 6px;font-size:1.05rem}
+    table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{background:#faf6ec}td.n,th.n{text-align:right;white-space:nowrap}
+    .tag{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:999px;white-space:nowrap}
+    .t-m{background:#dff3e6;color:#145a2c}.t-p{background:#e4ecfb;color:#1a3f8f}.t-e{background:#fdeccb;color:#7a4b00}.t-n{background:#eee;color:#555}.t-h{background:#fbd9d6;color:#8a1b13}
+    .legend{font-size:.85rem;color:#555}
+    .kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:10px 0}.kpi div{border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}.kpi b{display:block;font-size:1.6rem}
+    .na{background:#f6f3ea;border:1px dashed #b9ae95;border-radius:10px;padding:14px}
+    ul{padding-left:20px}li{margin:5px 0}
+    section{margin-bottom:28px}tr,.kpi,.na{break-inside:avoid}h2,h3{break-after:avoid}
+    @media (max-width:640px){.sheet{padding:20px 16px;margin:0}.kpi{grid-template-columns:1fr}table{font-size:.8rem}}
+    @media print{
+      @page{size:A4;margin:14mm}
+      body{background:#fff}.bar{display:none}.sheet{max-width:none;margin:0;padding:0;border-radius:0}
+      .cover{break-after:page;-webkit-print-color-adjust:exact;print-color-adjust:exact;padding:90px 20px}
+      .tag,th,.na{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+      a{color:inherit;text-decoration:none}
+    }
+  </style>
+</head>
+<body>
+<div class="bar"><button type="button" onclick="window.print()">Als PDF speichern / Drucken</button><a href="index.html">← Zurück zur Verwaltung</a></div>
+<div id="report"><div class="sheet"><p>Report wird geladen …</p></div></div>
+<script>
+(function(){
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+  function de(d){try{return new Date(d).toLocaleDateString('de-DE',{day:'2-digit',month:'long',year:'numeric'})}catch(e){return d}}
+  function yn(v){return v?'ja':'nein'}
+  Promise.all([
+    fetch('../data/report.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('report.json fehlt');return r.json()}),
+    fetch('../data/analytics.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).catch(function(){return null})
+  ]).then(function(x){
+    var R=x[0],A=x[1],h='';
+    h+='<div class="sheet cover"><img src="../assets/images/extra/logo1.webp" alt=""><h1>Website-Report</h1><p><strong>'+esc(R.restaurant)+'</strong></p><p>Berichtszeitraum: '+esc(R.period)+'</p><p>Erstellt am '+esc(de(R.created))+'</p></div>';
+    h+='<div class="sheet"><section><h2>1. Zusammenfassung</h2><p>'+esc(R.summary)+'</p>'+
+      '<p class="legend"><span class="tag t-m">gemessen</span> Wert wurde technisch gemessen &nbsp; <span class="tag t-p">geprüft</span> von Hand kontrolliert &nbsp; <span class="tag t-e">Empfehlung</span> Vorschlag, noch nicht umgesetzt &nbsp; <span class="tag t-n">nicht ausgeführt</span> nicht getestet</p></section>';
+    h+='<section><h2>2. Umgesetzte Verbesserungen</h2><table><tr><th>Datum</th><th>Bereich</th><th>Was wurde gemacht</th></tr>'+R.improvements.map(function(i){return '<tr><td style="white-space:nowrap">'+esc(new Date(i.date).toLocaleDateString('de-DE'))+'</td><td>'+esc(i.area)+'</td><td>'+esc(i.text)+'</td></tr>'}).join('')+'</table></section>';
+    function s(ms){return ms==null?'–':(ms/1000).toFixed(1).replace('.',',')+' s'}
+    function mb(x){return x==null?'–':String(x.toFixed(2)).replace('.',',')+' MB'}
+    h+='<section><h2>3. Ladezeit &amp; Technik <span class="tag t-m">gemessen</span></h2><p class="legend">'+esc(R.measuredNote)+'</p>'+
+      '<table><tr><th>Seite</th><th class="n">Hauptinhalt sichtbar (LCP)</th><th class="n">Vollständig geladen</th><th class="n">Datenmenge</th></tr>'+
+      R.pages.filter(function(p){return p.before.lcpMs!=null}).map(function(p){var b=p.before,a=p.after;
+        return '<tr><td>'+esc(p.page)+'</td><td class="n">'+s(b.lcpMs)+' → <strong>'+s(a.lcpMs)+'</strong></td><td class="n">'+s(b.loadMs)+' → <strong>'+s(a.loadMs)+'</strong></td><td class="n">'+mb(b.mb)+' → <strong>'+mb(a.mb)+'</strong></td></tr>'}).join('')+'</table>'+
+      '<h3>Technische Prüfung je Seite</h3><table><tr><th>Seite</th><th class="n">JS-Fehler</th><th class="n">Google-Beschreibung (Zeichen)</th><th class="n">Hauptüberschrift</th><th>Seitliches Verrutschen (Handy)</th></tr>'+
+      R.pages.map(function(p){var b=p.before,a=p.after;return '<tr><td>'+esc(p.page)+'</td><td class="n">'+b.jsErrors+' → '+a.jsErrors+'</td><td class="n">'+b.descChars+' → '+a.descChars+'</td><td class="n">'+b.h1+' → '+a.h1+'</td><td>'+yn(b.sideScroll)+' → '+yn(a.sideScroll)+'</td></tr>'}).join('')+'</table>'+
+      '<p class="legend">Bilddateien insgesamt: '+String(R.imageWeight.beforeMB).replace('.',',')+' MB → '+String(R.imageWeight.afterMB).replace('.',',')+' MB. '+esc(R.imageWeight.note)+'</p></section>';
+    h+='<section><h2>4. Reichweite &amp; Besucher</h2>';
+    if(A&&A.status==='ok'){
+      h+='<p><span class="tag t-m">gemessen</span> Quelle: '+esc(A.source||'GoatCounter')+' · Zeitraum '+esc(de(A.from))+' bis '+esc(de(A.to))+'</p><div class="kpi"><div><b>'+esc(A.total.visitors)+'</b>Besucher</div><div><b>'+esc(A.total.pageviews)+'</b>Seitenaufrufe</div><div><b>'+esc((A.events||[]).reduce(function(s,e){return s+e.count},0))+'</b>erfasste Klicks</div></div>';
+      if(A.pages&&A.pages.length)h+='<h3>Meistbesuchte Seiten</h3><table>'+A.pages.slice(0,10).map(function(p){return '<tr><td>'+esc(p.path)+'</td><td class="n">'+esc(p.count)+'</td></tr>'}).join('')+'</table>';
+      if(A.events&&A.events.length)h+='<h3>Klicks (Telefon, Reservierung, Lieferdienste …)</h3><table>'+A.events.map(function(p){return '<tr><td>'+esc(p.path)+'</td><td class="n">'+esc(p.count)+'</td></tr>'}).join('')+'</table>';
+      h+='<p class="legend">Es werden nur Besucher erfasst, die der Messung zugestimmt haben; die Zahlen sind daher Mindestwerte.</p>';
+    } else {
+      h+='<div class="na"><strong>Nicht verfügbar.</strong> '+esc((A&&A.reason)||'Es wurde noch keine Reichweitenmessung eingerichtet.')+'<br>Für Besucherzahlen, meistbesuchte Seiten und Klicks auf Telefon/Reservierung ist ein kostenloses GoatCounter-Konto nötig (cookielos). Einrichtung: ANLEITUNG.md. Bis dahin werden keine Zahlen angezeigt.</div>';
+    }
+    h+='</section>';
+    h+='<section><h2>5. Manuelle Prüfungen</h2><table><tr><th>Prüfpunkt</th><th>Status</th></tr>'+R.manualChecks.map(function(c){var ok=c.status.indexOf('geprüft')===0;return '<tr><td>'+esc(c.item)+'</td><td><span class="tag '+(ok?'t-p':'t-n')+'">'+esc(c.status)+'</span></td></tr>'}).join('')+'</table></section>';
+    h+='<section><h2>6. Offene Punkte &amp; Empfehlungen</h2><table><tr><th>Priorität</th><th>Empfehlung</th></tr>'+R.recommendations.map(function(c){return '<tr><td><span class="tag '+(c.priority==='hoch'?'t-h':'t-e')+'">'+esc(c.priority)+'</span></td><td>'+esc(c.text)+'</td></tr>'}).join('')+'</table></section>';
+    h+='<section><h2>7. Nächste sinnvolle Schritte</h2><ul>'+R.nextSteps.map(function(s){return '<li>'+esc(s)+'</li>'}).join('')+'</ul></section></div>';
+    document.getElementById('report').innerHTML=h;
+  }).catch(function(e){document.getElementById('report').innerHTML='<div class="sheet"><p>Report konnte nicht geladen werden: '+esc(e.message)+'</p></div>'});
+})();
+</script>
+</body>
+</html>

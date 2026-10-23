@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Verwaltung – IZ Restaurant</title>
+  <link rel="icon" type="image/png" href="../assets/images/extra/icon-48.png">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<header class="top">
+  <img src="../assets/images/extra/icon-48.png" alt="" width="40" height="40">
+  <strong>IZ Verwaltung</strong>
+  <span id="who" class="who"></span>
+  <button id="logout" type="button" class="ghost" hidden>Abmelden</button>
+</header>
+
+<main id="app">
+  <section id="login" class="card narrow">
+    <h1>Anmelden</h1>
+    <p>Mit deinem GitHub-Zugang kannst du Texte, Preise und Bilder ändern. Änderungen sind nach ca. 1–2 Minuten auf der Website sichtbar.</p>
+    <form id="loginForm" autocomplete="off">
+      <label>Repository (Besitzer/Name)
+        <input id="repo" required placeholder="iz-mannheim/iz-mannheim.github.io" value="iz-mannheim/iz-mannheim.github.io">
+      </label>
+      <label>Zugangs-Token (GitHub)
+        <input id="token" type="password" required autocomplete="off" placeholder="github_pat_…">
+      </label>
+      <label class="check"><input id="remember" type="checkbox"> Auf diesem Gerät angemeldet bleiben</label>
+      <button type="submit" class="primary">Anmelden</button>
+      <p id="loginMsg" class="msg" role="alert"></p>
+    </form>
+    <details><summary>Wie bekomme ich einen Token?</summary>
+      <ol>
+        <li>Bei GitHub anmelden → Einstellungen → Developer settings → Personal access tokens → <em>Fine-grained tokens</em>.</li>
+        <li>„Generate new token“, Repository auswählen, Berechtigung <strong>Contents: Read and write</strong>.</li>
+        <li>Token hier einfügen. Er wird nur in deinem Browser gespeichert und nie auf der Website veröffentlicht.</li>
+      </ol>
+    </details>
+  </section>
+
+  <div id="editor" hidden>
+    <nav class="tabs" role="tablist" aria-label="Bereiche">
+      <button role="tab" data-tab="menu" aria-selected="true">Speisekarte</button>
+      <button role="tab" data-tab="texts" aria-selected="false">Texte &amp; Infos</button>
+      <button role="tab" data-tab="hours" aria-selected="false">Öffnungszeiten</button>
+      <button role="tab" data-tab="report" aria-selected="false">Report</button>
+      <button role="tab" data-tab="history" aria-selected="false">Änderungen</button>
+    </nav>
+    <section id="tab-menu" class="tabpanel"></section>
+    <section id="tab-texts" class="tabpanel" hidden></section>
+    <section id="tab-hours" class="tabpanel" hidden></section>
+    <section id="tab-report" class="tabpanel" hidden></section>
+    <section id="tab-history" class="tabpanel" hidden></section>
+  </div>
+</main>
+
+<div id="savebar" class="savebar" hidden>
+  <span id="dirtyInfo">Ungespeicherte Änderungen</span>
+  <button id="discard" type="button" class="ghost">Verwerfen</button>
+  <button id="publish" type="button" class="primary">Veröffentlichen</button>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="admin.js"></script>
+</body>
+</html>
