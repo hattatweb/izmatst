@@ -1,0 +1,223 @@
+{
+  "updated": "2026-10-22",
+  "restaurant": {
+    "name": "IZ Uigurisches Restaurant Mannheim",
+    "phone": "0176 43145847",
+    "phoneHref": "+4917643145847",
+    "street": "G7 15",
+    "zip": "68159",
+    "city": "Mannheim",
+    "country": "Deutschland",
+    "lat": 49.49228757,
+    "lng": 8.45933497,
+    "priceRange": "€€"
+  },
+  "notice": {
+    "enabled": false,
+    "text": "Wir haben vom 1. bis 7. Januar Betriebsferien."
+  },
+  "hero": {
+    "title": "IZ Mannheim",
+    "subtitle": "Authentische uigurische Küche",
+    "text": "Traditionelles Ambiente im Herzen Mannheims",
+    "buttonMenu": "Speisekarte entdecken",
+    "buttonReserve": "Tisch reservieren"
+  },
+  "intro": {
+    "title": "Willkommen im IZ Restaurant",
+    "text": "Jetzt einen Tisch reservieren. Erlebe die einzigartige Geschmackskultur Zentralasiens – handgezogene Nudeln, würzige Spezialitäten und ein traditionelles Ambiente."
+  },
+  "highlights": {
+    "title": "Unsere Empfehlungen",
+    "text": "Diese Gerichte empfehlen wir besonders – frisch zubereitet nach traditionellen Rezepten."
+  },
+  "delivery": {
+    "title": "Jetzt auch ganz einfach nach Hause bestellen",
+    "items": [
+      {
+        "type": "ubereats",
+        "label": "Bei Uber Eats bestellen",
+        "url": "https://www.ubereats.com/de/store/iz-uigurisches-restaurant-mannheim/Ur824UdqWp-X-8Qj6ao86g?diningMode=DELIVERY&surfaceName="
+      },
+      {
+        "type": "lieferando",
+        "label": "Bei Lieferando bestellen",
+        "url": "https://www.lieferando.de/speisekarte/iz-uigurisches-restaurant-mannheim"
+      }
+    ]
+  },
+  "lunch": {
+    "title": "Mal etwas Neues oder Anderes für die Mittagspause in Mannheim?",
+    "button": "Mittagstisch herunterladen (PDF-Datei)",
+    "pdf": "assets/mittag_menu.pdf"
+  },
+  "video": {
+    "title": "Einblicke ins IZ Restaurant"
+  },
+  "social": {
+    "title": "Entdecke uns auf Social Media",
+    "instagram": "https://www.instagram.com/izrestaurant.ma?igsh=MWxodnRsc2JiNDZkNg==",
+    "tiktok": "https://www.tiktok.com/@iz.restaurant.ma?_r=1&_t=ZG-95EG0OSbyyG"
+  },
+  "hours": [
+    {
+      "day": "Montag",
+      "dow": "Monday",
+      "closed": false,
+      "slots": [
+        [
+          "11:30",
+          "14:30"
+        ],
+        [
+          "17:00",
+          "23:00"
+        ]
+      ]
+    },
+    {
+      "day": "Dienstag",
+      "dow": "Tuesday",
+      "closed": true,
+      "slots": []
+    },
+    {
+      "day": "Mittwoch",
+      "dow": "Wednesday",
+      "closed": false,
+      "slots": [
+        [
+          "11:30",
+          "14:30"
+        ],
+        [
+          "17:00",
+          "23:00"
+        ]
+      ]
+    },
+    {
+      "day": "Donnerstag",
+      "dow": "Thursday",
+      "closed": false,
+      "slots": [
+        [
+          "11:30",
+          "14:30"
+        ],
+        [
+          "17:00",
+          "23:00"
+        ]
+      ]
+    },
+    {
+      "day": "Freitag",
+      "dow": "Friday",
+      "closed": false,
+      "slots": [
+        [
+          "14:00",
+          "00:00"
+        ]
+      ]
+    },
+    {
+      "day": "Samstag",
+      "dow": "Saturday",
+      "closed": false,
+      "slots": [
+        [
+          "12:00",
+          "00:00"
+        ]
+      ]
+    },
+    {
+      "day": "Sonntag",
+      "dow": "Sunday",
+      "closed": false,
+      "slots": [
+        [
+          "12:00",
+          "23:00"
+        ]
+      ]
+    }
+  ],
+  "hoursNote": "Hinweis: An Feiertagen (z. B. Karfreitag oder Ostermontag) können die Öffnungszeiten abweichen.",
+  "menuPage": {
+    "title": "Unsere Speisekarte",
+    "subtitle": "Hier kannst du unsere aktuelle Speisekarte ansehen.",
+    "text": "Bitte beachte, dass Bestellungen mit verschiedenen Gerichten unter Umständen zeitversetzt und eventuell mit Verzögerung serviert werden. Da wir jedes Gericht frisch und individuell auf Bestellung zubereiten, kann es zu Wartezeiten kommen. Vielen Dank für Dein Verständnis – wir wünschen Dir einen guten Appetit!",
+    "pdfLabel": "Speisekarte als PDF herunterladen",
+    "pdf": "assets/menu.pdf",
+    "lunchLabel": "Mittagstisch - für Deine genussvolle Mittagspause",
+    "lunchPdf": "assets/mittag_menu.pdf",
+    "extra": "Nachspeisen - bald verfügbar",
+    "allergenNote": "Bei Allergien oder Unverträglichkeiten sprich uns bitte vor der Bestellung an."
+  },
+  "contact": {
+    "title": "Kontakt & Öffnungszeiten – IZ Restaurant Mannheim",
+    "intro": "Du möchtest einen Tisch reservieren oder hast Fragen zu unserer uigurischen Küche? Hier findest du alle wichtigen Informationen zum **IZ Restaurant Mannheim**.",
+    "reservationText": "Für ein entspanntes Erlebnis empfehlen wir dir, vorab zu reservieren – besonders am Abend und am Wochenende.",
+    "directionsText": "Unser Restaurant befindet sich zentral in Mannheim und ist bequem zu Fuß, mit öffentlichen Verkehrsmitteln oder dem Auto erreichbar."
+  },
+  "about": {
+    "title": "Über uns – IZ Restaurant Mannheim",
+    "intro": [
+      "Willkommen im **IZ Uigurischen Restaurant in Mannheim** – deinem Ziel für authentische uigurische Küche im Herzen der Stadt. Bei uns erlebst du eine einzigartige kulinarische Reise entlang der historischen Seidenstraße, wo Tradition, Geschmack und Gastfreundschaft aufeinandertreffen.",
+      "Ob du zum ersten Mal uigurisch essen gehst oder neue Aromen entdecken möchtest – wir laden dich ein, die Vielfalt Zentralasiens in einer besonderen Atmosphäre zu erleben."
+    ],
+    "sections": [
+      {
+        "title": "Unsere Wurzeln – Uigurische Küche & Seidenstraße",
+        "paragraphs": [
+          "Die uigurische Küche stammt aus Zentralasien und entstand entlang der legendären Seidenstraße – einem der wichtigsten Handelswege zwischen Ost und West. Dadurch vereint sie Einflüsse aus der Türkei, Persien und dem Nahen Osten zu einer einzigartigen kulinarischen Tradition.",
+          "Diese besondere Mischung macht die uigurische Küche so einzigartig: aromatische Gewürze, frische Zutaten und traditionelle Handarbeit verbinden sich zu intensiven Geschmackserlebnissen."
+        ]
+      },
+      {
+        "title": "Unsere Küche – Authentisch, frisch und handgemacht",
+        "paragraphs": [
+          "Im IZ Restaurant Mannheim legen wir großen Wert auf authentische Zubereitung. Viele unserer Gerichte werden frisch und nach traditionellen Rezepten gekocht – so wie sie seit Generationen weitergegeben werden.",
+          "Besonders bekannt sind unsere **Laghman-Nudeln** – handgezogene Nudeln, die frisch zubereitet und mit Fleisch, Gemüse und würzigen Saucen serviert werden. Sie gelten als Herzstück der uigurischen Küche und sind ein echtes Highlight für alle, die etwas Neues probieren möchten.",
+          "Neben Laghman bieten wir eine Vielzahl weiterer Spezialitäten wie würzige Fleischgerichte, traditionelle Reisgerichte (Polo), frisch gebackenes Nan-Brot und aromatische Kebabs."
+        ]
+      },
+      {
+        "title": "Unsere Philosophie – Essen als Erlebnis",
+        "paragraphs": [
+          "Für uns ist Essen mehr als nur eine Mahlzeit – es ist ein Erlebnis. In der uigurischen Kultur steht Essen für Gemeinschaft, Familie und Gastfreundschaft.",
+          "Deshalb schaffen wir einen Ort, an dem du dich wohlfühlst, entspannen kannst und gemeinsam mit Freunden oder Familie genießen kannst. Unsere traditionelle Einrichtung und unser Service spiegeln genau dieses Lebensgefühl wider."
+        ]
+      },
+      {
+        "title": "IZ Restaurant Mannheim – Mehr als nur ein Restaurant",
+        "paragraphs": [
+          "Das IZ Restaurant ist eines der wenigen uigurischen Restaurants in Mannheim und der Region und bietet dir eine Küche, die du so nur selten findest. Bei uns entdeckst du neue Geschmäcker, lernst eine faszinierende Kultur kennen und erlebst echte Handwerkskunst in der Küche.",
+          "Wir freuen uns darauf, dich bei uns begrüßen zu dürfen und dir die Vielfalt der uigurischen Küche näherzubringen."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Erlebe uigurische Küche in Mannheim",
+      "button": "Jetzt Tisch reservieren"
+    },
+    "explainer": {
+      "title": "Uigurische Küche Mannheim – Was ist das?",
+      "paragraphs": [
+        "Die uigurische Küche ist eine traditionelle Küche aus Zentralasien, die entlang der historischen Seidenstraße entstanden ist. Durch den Austausch verschiedener Kulturen entwickelte sich eine einzigartige Esskultur, die für ihre intensiven Aromen, frischen Zutaten und handwerkliche Zubereitung bekannt ist.",
+        "Typisch für die uigurische Küche sind handgezogene Nudeln (Laghman), würzige Fleischgerichte, gegrillte Spieße (Kebabs) und aromatische Reisgerichte wie Polo. Gewürze wie Kreuzkümmel, Chili und Knoblauch spielen dabei eine zentrale Rolle und sorgen für den charakteristischen Geschmack.",
+        "Ein besonderes Merkmal ist die traditionelle Zubereitung: Viele Gerichte werden frisch von Hand hergestellt – insbesondere die beliebten Nudeln, die direkt vor dem Kochen gezogen werden.",
+        "In Mannheim ist die uigurische Küche noch ein echter Geheimtipp. Wer authentisches Essen abseits der bekannten Küchen entdecken möchte, findet hier eine spannende Alternative mit einzigartigem Geschmack und kulturellem Hintergrund.",
+        "Im IZ Restaurant Mannheim kannst du diese besondere Küche original erleben – von traditionellen Rezepten bis hin zu modernen Interpretationen zentralasiatischer Spezialitäten."
+      ]
+    }
+  },
+  "analytics": {
+    "provider": "goatcounter",
+    "code": "",
+    "requireConsent": true
+  }
+}

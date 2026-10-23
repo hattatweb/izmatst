@@ -1,0 +1,565 @@
+{
+  "updated": "2026-10-22",
+  "categories": [
+    {
+      "id": "vorspeisen",
+      "title": "Vorspeisen",
+      "visible": true,
+      "items": [
+        {
+          "nr": 1,
+          "name": "Uigur Salat",
+          "price": "6,99 €",
+          "description": "Karotten, Glasnudeln, Paprika und Knoblauch",
+          "allergens": "",
+          "image": "assets/yemekler/1.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 2,
+          "name": "Chili-Erdnuss-Hähnchen",
+          "price": "11,99 €",
+          "description": "Hähnchenbrust, Erdnüsse, Koriander und Chilisauce",
+          "allergens": "Erdnüsse",
+          "image": "assets/yemekler/2.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 3,
+          "name": "Terhemek",
+          "price": "5,99 €",
+          "description": "Gurke, Sesam und spezielle Sauce",
+          "allergens": "Sesam",
+          "image": "assets/yemekler/3.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 4,
+          "name": "Chili-Rindscheiben",
+          "price": "13,99 €",
+          "description": "Rindfleisch mit spezieller Sauce",
+          "allergens": "",
+          "image": "assets/yemekler/4.webp",
+          "available": true,
+          "recommended": false
+        }
+      ]
+    },
+    {
+      "id": "hauptgerichte",
+      "title": "Hauptgerichte",
+      "visible": true,
+      "items": [
+        {
+          "nr": 20,
+          "name": "Manta",
+          "price": "14,99 €",
+          "description": "Gefüllte Teigtaschen mit Rindfleisch, Gewürzen, Chilisauce und Essig",
+          "allergens": "Gluten",
+          "image": "assets/yemekler/20.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 22,
+          "name": "Uigur Polo",
+          "price": "14,90 €",
+          "description": "Rindfleisch, Karotten, Kichererbsen, Rosinen und Reis - Nur am Fr,Sa und So",
+          "allergens": "",
+          "image": "assets/yemekler/22.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 23,
+          "name": "Göschnan",
+          "price": "14,90 €",
+          "description": "Gefüllte Teigtaschen mit Rindfleisch und Gewürzen",
+          "allergens": "Gluten",
+          "image": "assets/yemekler/23.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 25,
+          "name": "Uigur Ramen",
+          "price": "12,90 €",
+          "description": "Rinderknochensuppe mit Rindscheiben, Gewürzen, Chiliöl und Nudeln - Werktags ab 17:00 Uhr",
+          "allergens": "Gluten",
+          "image": "assets/yemekler/25.webp",
+          "available": true,
+          "recommended": false
+        }
+      ]
+    },
+    {
+      "id": "nudelgerichte",
+      "title": "Nudelgerichte",
+      "visible": true,
+      "items": [
+        {
+          "nr": 33,
+          "name": "Korulghan Laghmen",
+          "price": "14,99 €",
+          "description": "Speziell zubereitetes Rindfleisch, gebratene Nudeln, grüne und rote Paprika und Frühlingszwiebeln.",
+          "allergens": "Gluten",
+          "image": "assets/yemekler/33.webp",
+          "available": true,
+          "recommended": true
+        },
+        {
+          "nr": 30,
+          "name": "Iz Spezial Laghmen",
+          "price": "15,99 €",
+          "description": "Extra Rindfleisch, Nudeln, schwarze Pilze, Chinakohl, spezielle Gewürze und Paprika",
+          "allergens": "Gluten",
+          "image": "assets/yemekler/30.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 31,
+          "name": "Guyru Laghmen",
+          "price": "14,99 €",
+          "description": "Rindfleisch, Nudeln, Chinakohl, schwarze Pilze und Paprika",
+          "allergens": "Gluten",
+          "image": "assets/yemekler/31.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 32,
+          "name": "Kıyma Laghmen",
+          "price": "14,99 €",
+          "description": "Rindfleisch, Nudeln, Chinakohl und in Stücke geschnittenes Gemüse",
+          "allergens": "Gluten",
+          "image": "assets/yemekler/32.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 34,
+          "name": "Marjan-kormasi",
+          "price": "14,99 €",
+          "description": "Rindfleisch, gekochte und in Stücke geschnittene Nudeln, Chinakohl, rote und grüne Paprika.",
+          "allergens": "Gluten",
+          "image": "assets/yemekler/34.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 35,
+          "name": "Tochu Laghmen",
+          "price": "13,99 €",
+          "description": "Hähnchenfleisch, Nudeln, Chinakohl und Paprika",
+          "allergens": "Gluten",
+          "image": "assets/yemekler/35.webp",
+          "available": true,
+          "recommended": false
+        }
+      ]
+    },
+    {
+      "id": "reisgerichte",
+      "title": "Reisgerichte",
+      "visible": true,
+      "items": [
+        {
+          "nr": 37,
+          "name": "Uigur Kazan Kawap Beilage: Reis",
+          "price": "22,90 €",
+          "description": "Gebratenes Rindfleisch mit Zwiebeln und Gewürzen - Beilage Reis",
+          "allergens": "",
+          "image": "assets/yemekler/37.webp",
+          "available": true,
+          "recommended": true
+        },
+        {
+          "nr": 26,
+          "name": "Yis Purcak Kormasi Beilage: Reis",
+          "price": "19,99 €",
+          "description": "Rindfleisch mit Bohnen, Chili und Knoblauch - Beilage: Reis",
+          "allergens": "",
+          "image": "assets/yemekler/26.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 27,
+          "name": "Pidigen Gösch Kormasi Beilage: Reis",
+          "price": "19,99 €",
+          "description": "Auberginen mit Rindfleisch und Paprika - Beilage: Reis",
+          "allergens": "",
+          "image": "assets/yemekler/27.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 36,
+          "name": "Iz Alahide Kormasi Beilage: Reis",
+          "price": "22,50 €",
+          "description": "Rindfleisch, Zwiebeln, rote und grüne Paprika.- Beilage: Reis",
+          "allergens": "",
+          "image": "assets/yemekler/36.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 39,
+          "name": "Mor Kormasi Beilage: Reis",
+          "price": "19,99 €",
+          "description": "Rindfleisch, schwarze Pilze, rote und grüne Paprika. - Beilage: Reis",
+          "allergens": "",
+          "image": "assets/yemekler/39.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 40,
+          "name": "Tochu Meghiz Kormasi Beilage: Reis",
+          "price": "15,99 €",
+          "description": "Hähnchenfleisch (ohne Knochen), Erdnüsse, rote und grüne Paprika. - Beilage: Reis",
+          "allergens": "",
+          "image": "assets/yemekler/40.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 45,
+          "name": "Koy Korga Beilage: Reis",
+          "price": "1 P. 22,50 € 2-3P. 36,99 €",
+          "description": "Lammkeule und Lammrippen, Zwiebeln, spezielle Gewürze, rote und grüne Paprika. - Beilage: Reis",
+          "allergens": "",
+          "image": "assets/yemekler/45.webp",
+          "available": true,
+          "recommended": false
+        }
+      ]
+    },
+    {
+      "id": "spezialgerichte",
+      "title": "Spezialgerichte",
+      "visible": true,
+      "items": [
+        {
+          "nr": 42,
+          "name": "Kurghak Tochu Kormasi für 2-3 Personen - Beilage: Reis",
+          "price": "34,99 €",
+          "description": "Frittierte Hähnchenschenkel /(Hähnchenbrust möglich) mit Chili, grüne und rote / Mittelscharf (für 2–3 Personen) - Zu Stoßzeiten dauert es 40-50 Minuten",
+          "allergens": "",
+          "image": "assets/yemekler/42.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 43,
+          "name": "Accik Tochu Kormasi für 2-3 Personen",
+          "price": "34,99 €",
+          "description": "Hähnchen(mit Knochen)/Hähnchenbrust möglich mit Chili (sehr scharf), Gewürzen und Nudeln (für 2–3 Personen) - Zu Stoßzeiten dauert es 40–50 Minuten",
+          "allergens": "",
+          "image": "assets/yemekler/43.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 44,
+          "name": "Tochu Kordak",
+          "price": "1P. 13,99 € 2-3P. 34,99 €",
+          "description": "Hähnchengericht(mit Knochen) mit Gewürzen und Gemüse, Chili (etwas scharf) - Zu Stoßzeiten dauert es 40–50 Minuten",
+          "allergens": "",
+          "image": "assets/yemekler/44.webp",
+          "available": true,
+          "recommended": false
+        }
+      ]
+    },
+    {
+      "id": "vegetarisch",
+      "title": "Vegetarisch",
+      "visible": true,
+      "items": [
+        {
+          "nr": 60,
+          "name": "Güro-Laghmen",
+          "price": "13,99 €",
+          "description": "Gekochte Nudeln, Chinakohl, schwarze Pilze, rote und grüne Paprika",
+          "allergens": "Gluten",
+          "image": "assets/yemekler/60.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 61,
+          "name": "Vegetarisches Korulghan Laghmen",
+          "price": "13,99 €",
+          "description": "Gebratene Nudeln mit Paprika und Frühlingszwiebeln",
+          "allergens": "Gluten",
+          "image": "assets/yemekler/61.webp",
+          "available": true,
+          "recommended": true
+        },
+        {
+          "nr": 62,
+          "name": "Accik Tofu - Beilage: Reis",
+          "price": "15,99 €",
+          "description": "Tofu mit Chili (mittelscharf) und spezieller Sauce",
+          "allergens": "Soja",
+          "image": "assets/yemekler/62.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 63,
+          "name": "Tofu Kormasi Beilage: Reis",
+          "price": "15,99 €",
+          "description": "Gebratener Tofu mit Gemüse",
+          "allergens": "Soja",
+          "image": "assets/yemekler/63.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 64,
+          "name": "Yis Purcak Kormasi Beilage: Reis",
+          "price": "15,99 €",
+          "description": "Bohnen und getrocknete Paprika",
+          "allergens": "",
+          "image": "assets/yemekler/64.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 65,
+          "name": "Pidigen Kormasi Beilage: Reis",
+          "price": "15,99 €",
+          "description": "Auberginen, grüne und rote Paprika",
+          "allergens": "",
+          "image": "assets/yemekler/65.webp",
+          "available": true,
+          "recommended": false
+        }
+      ]
+    },
+    {
+      "id": "kindergerichte",
+      "title": "Kindergerichte",
+      "visible": true,
+      "items": [
+        {
+          "nr": 70,
+          "name": "Pommes",
+          "price": "5,00 €",
+          "description": "",
+          "allergens": "",
+          "image": "assets/yemekler/70.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 71,
+          "name": "Nuggets",
+          "price": "7,00 €",
+          "description": "",
+          "allergens": "Gluten",
+          "image": "assets/yemekler/71.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 72,
+          "name": "Pommes & Nuggets",
+          "price": "9,99 €",
+          "description": "",
+          "allergens": "Gluten",
+          "image": "assets/yemekler/72.webp",
+          "available": true,
+          "recommended": false
+        }
+      ]
+    },
+    {
+      "id": "beilagen",
+      "title": "Beilagen",
+      "visible": true,
+      "items": [
+        {
+          "nr": 6,
+          "name": "Reis",
+          "price": "3,00 €",
+          "description": "",
+          "allergens": "",
+          "image": "assets/yemekler/6.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 7,
+          "name": "Nudeln",
+          "price": "3,00 €",
+          "description": "",
+          "allergens": "Gluten",
+          "image": "assets/yemekler/7.webp",
+          "available": true,
+          "recommended": false
+        }
+      ]
+    },
+    {
+      "id": "getraenke",
+      "title": "Getränke",
+      "visible": true,
+      "items": [
+        {
+          "nr": 80,
+          "name": "Fritz Sorten",
+          "price": "3,50 €",
+          "description": "Sorten: Kola Original, Super-Zero, Orange, Mischmasch, Apfelschorle",
+          "allergens": "",
+          "image": "assets/yemekler/80.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 81,
+          "name": "Elephant Bay - Sorten",
+          "price": "3,50 €",
+          "description": "Peach, Pomegranate, Blueberry, Exotic, Lemon",
+          "allergens": "",
+          "image": "assets/yemekler/81.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 82,
+          "name": "Ayran",
+          "price": "3,00 €",
+          "description": "",
+          "allergens": "Milch",
+          "image": "assets/yemekler/82.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 91,
+          "name": "Teinacher Wasser Naturell (0,33L)",
+          "price": "3,00 €",
+          "description": "",
+          "allergens": "",
+          "image": "assets/yemekler/91.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 92,
+          "name": "Teinacher Wasser Naturell (0,75L)",
+          "price": "5,00 €",
+          "description": "",
+          "allergens": "",
+          "image": "assets/yemekler/92.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 93,
+          "name": "Teinacher Wasser Classic (0,33L)",
+          "price": "3,00 €",
+          "description": "",
+          "allergens": "",
+          "image": "assets/yemekler/93.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 94,
+          "name": "Teinacher Wasser Classic (0,75L)",
+          "price": "5,00 €",
+          "description": "",
+          "allergens": "",
+          "image": "assets/yemekler/94.webp",
+          "available": true,
+          "recommended": false
+        }
+      ]
+    },
+    {
+      "id": "kaffespezialiten",
+      "title": "Tee & Kaffeespezialitäten",
+      "visible": true,
+      "items": [
+        {
+          "nr": 83,
+          "name": "Uigur Tee (Kanne)",
+          "price": "5,90 €",
+          "description": "",
+          "allergens": "",
+          "image": "assets/yemekler/83.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 84,
+          "name": "Cappuccino",
+          "price": "3,50 €",
+          "description": "",
+          "allergens": "Milch",
+          "image": "assets/yemekler/84.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 85,
+          "name": "Espresso",
+          "price": "2,20 €",
+          "description": "",
+          "allergens": "",
+          "image": "assets/yemekler/85.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 86,
+          "name": "Double Espresso",
+          "price": "3,20 €",
+          "description": "",
+          "allergens": "",
+          "image": "assets/yemekler/86.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 87,
+          "name": "Americano",
+          "price": "2,90 €",
+          "description": "",
+          "allergens": "",
+          "image": "assets/yemekler/87.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 89,
+          "name": "Caffè Latte",
+          "price": "3,80 €",
+          "description": "",
+          "allergens": "Milch",
+          "image": "assets/yemekler/89.webp",
+          "available": true,
+          "recommended": false
+        },
+        {
+          "nr": 90,
+          "name": "Latte Macchiato",
+          "price": "3,90 €",
+          "description": "",
+          "allergens": "Milch",
+          "image": "assets/yemekler/90.webp",
+          "available": true,
+          "recommended": false
+        }
+      ]
+    }
+  ]
+}

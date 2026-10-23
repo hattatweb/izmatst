@@ -1,0 +1,346 @@
+{
+  "restaurant": "IZ Uigurisches Restaurant Mannheim",
+  "period": "Oktober 2026",
+  "created": "2026-10-22",
+  "summary": "Die Website wurde gestalterisch verfeinert und technisch grundlegend überarbeitet – ohne den Charakter aus Schwarz, Gold und dunklem Holz zu verändern. Die Speisekarte (alle 49 Gerichte und Preise) ist unverändert übernommen und jetzt selbst pflegbar. Die Seiten laden im Mobil-Test deutlich schneller: Die Speisekarte brauchte vorher 73 Sekunden bis zum vollständigen Laden, jetzt rund 1 Sekunde. Besucherzahlen sind vorbereitet, aber erst mit einem GoatCounter-Konto verfügbar – bis dahin steht im Report ehrlich „Nicht verfügbar“.",
+  "improvements": [
+    {
+      "date": "2026-10-22",
+      "area": "Design",
+      "text": "Markencharakter beibehalten (Schwarz, Gold, Holz) und verfeinert: einheitliche Abstände, edle Serifen-Überschriften passend zum Logo, goldene Zierlinien, Inhalte in ruhigen Kästen statt frei auf dem Holz, einheitliche Buttons mit gut sichtbaren Hover- und Fokuszuständen."
+    },
+    {
+      "date": "2026-10-22",
+      "area": "Startseite",
+      "text": "Neue Info-Leiste unter dem Titelbild: heutige Öffnungszeiten mit „jetzt geöffnet/geschlossen“, Adresse mit Routenlink, Telefon. Neuer Bereich „Unsere Empfehlungen“ mit den drei Gerichten, die auch die gedruckte Karte als Empfehlung führt (Nr. 33, 37, 61). Mittagstisch und Lieferdienste nebeneinander."
+    },
+    {
+      "date": "2026-10-22",
+      "area": "Speisekarte",
+      "text": "Alle 49 Gerichte und Preise unverändert übernommen (abgeglichen mit Online-Karte und PDF). Bekanntes Karten-Design (Gold-Karten zum Umdrehen) beibehalten; Teller werden vollständig gezeigt; Kategorie-Leiste bleibt beim Scrollen sichtbar; Anzahl der Gerichte je Kategorie; Empfehlungs-Abzeichen; Tippfehler und defekte Zeichen korrigiert."
+    },
+    {
+      "date": "2026-10-22",
+      "area": "Pflege",
+      "text": "Verwaltung unter /admin/: Preise, Gerichte, Beschreibungen, Allergene, Verfügbarkeit, Empfehlungen, Fotos, Öffnungszeiten, Hinweisbanner und Texte selbst ändern – mit Prüfung auf fehlende Preise/Namen, Bestätigung vor dem Veröffentlichen und Änderungsverlauf."
+    },
+    {
+      "date": "2026-10-22",
+      "area": "Ladezeit",
+      "text": "Bilder in modernem Format (WebP) und in passenden Größen für Handy und Desktop; Titelbild wird bevorzugt geladen, weitere Bilder erst bei Bedarf; Video-Vorschaubild erst beim Hinscrollen; Video in AV1 (6,3 statt 9,6 MB) mit MP4-Ersatz; vier CSS-Dateien zu einer zusammengefasst; Icon-Schrift (Font Awesome) entfernt; Favicon von 188 KB auf 10 KB."
+    },
+    {
+      "date": "2026-10-22",
+      "area": "Fehler behoben",
+      "text": "JavaScript-Fehler auf 7 von 8 Seiten beseitigt; seitliches Verrutschen auf dem Handy behoben; Holz-Hintergrund wird auf iPhones nicht mehr stark vergrößert; fehlende Hauptüberschriften ergänzt."
+    },
+    {
+      "date": "2026-10-22",
+      "area": "Handy",
+      "text": "Feste Leiste „Anrufen / Tisch reservieren“, große Tippflächen (mind. 44 px), Menü per Tastatur und Escape bedienbar, Galerie mit Wischgesten."
+    },
+    {
+      "date": "2026-10-22",
+      "area": "Galerie",
+      "text": "Bilderraster mit hervorgehobenen Hauptmotiven und Vergrößerung (Lightbox, auch per Tastatur und Wischen). Aus dem Raster genommen: ein unscharfes Doppelbild des Gastraums (275 px, dasselbe Motiv liegt in guter Auflösung vor) und die Landkarte der Seidenstraße (passt thematisch zu „Über uns“, dort weiter enthalten)."
+    },
+    {
+      "date": "2026-10-22",
+      "area": "Kontakt",
+      "text": "Adresse, Telefon und Öffnungszeiten übersichtlich in zwei Spalten, heutiger Tag hervorgehoben, Buttons „Route planen“ und „Anrufen“. Kontaktdaten und Öffnungszeiten zusätzlich im Fußbereich jeder Seite."
+    },
+    {
+      "date": "2026-10-22",
+      "area": "Google / SEO",
+      "text": "Seitentitel und Beschreibungen auf allen Seiten (vorher fehlten sie auf 5 Seiten), Inhalte direkt im HTML statt nur per JavaScript, Restaurant- und Speisekarten-Daten für Google (Adresse, Öffnungszeiten, Preise), Canonical-Links, Social-Vorschau, sitemap.xml, robots.txt, 404-Seite."
+    },
+    {
+      "date": "2026-10-22",
+      "area": "Datenschutz",
+      "text": "Google Maps und Reservierungsformular laden erst auf Klick bzw. nach Zustimmung. Cookie-Hinweis erscheint nur noch, wenn tatsächlich gemessen wird. Platzhalter-Reste in der Datenschutzerklärung entfernt und Text gegliedert."
+    },
+    {
+      "date": "2026-10-22",
+      "area": "Barrierefreiheit",
+      "text": "„Zum Inhalt springen“, sichtbare Fokusrahmen, korrekte Überschriften-Reihenfolge, Beschreibungstexte für alle Bilder, Farbkontraste nach WCAG AA (mind. 4,5:1) geprüft, Rücksicht auf „Bewegung reduzieren“."
+    }
+  ],
+  "measuredNote": "Labormessung im Chromium-Testbrowser mit Einstellungen wie Lighthouse „Mobil“: 412 px breit, CPU 4-fach gedrosselt, Netz „Slow 4G“ (150 ms Latenz, 1,6 Mbit/s), ohne Cache, Median aus 3 Läufen, lokaler Server ohne Komprimierung. LCP = Zeit bis das größte Element sichtbar ist (Google-Ziel: unter 2,5 s). Keine Live-Messung, keine echten Nutzerdaten (Core Web Vitals der Live-Seite: siehe Empfehlungen).",
+  "pages": [
+    {
+      "page": "Startseite",
+      "file": "index.html",
+      "before": {
+        "jsErrors": 1,
+        "descChars": 3,
+        "sideScroll": true,
+        "h1": 1,
+        "lcpMs": 13808,
+        "loadMs": 11730.0,
+        "mb": 2.18,
+        "cls": 0
+      },
+      "after": {
+        "jsErrors": 0,
+        "descChars": 152,
+        "sideScroll": false,
+        "h1": 1,
+        "lcpMs": 1436,
+        "loadMs": 2299,
+        "mb": 0.6,
+        "cls": 0.012
+      }
+    },
+    {
+      "page": "Über uns",
+      "file": "about.html",
+      "before": {
+        "jsErrors": 1,
+        "descChars": 146,
+        "sideScroll": true,
+        "h1": 1,
+        "lcpMs": 724,
+        "loadMs": 8156.0,
+        "mb": 1.56,
+        "cls": 0
+      },
+      "after": {
+        "jsErrors": 0,
+        "descChars": 149,
+        "sideScroll": false,
+        "h1": 1,
+        "lcpMs": 600,
+        "loadMs": 1503.0,
+        "mb": 0.21,
+        "cls": 0
+      }
+    },
+    {
+      "page": "Speisekarte",
+      "file": "menu.html",
+      "before": {
+        "jsErrors": 0,
+        "descChars": 0,
+        "sideScroll": true,
+        "h1": 0,
+        "lcpMs": 692,
+        "loadMs": 73423.0,
+        "mb": 14.58,
+        "cls": 0
+      },
+      "after": {
+        "jsErrors": 0,
+        "descChars": 146,
+        "sideScroll": false,
+        "h1": 1,
+        "lcpMs": 688,
+        "loadMs": 1080.0,
+        "mb": 0.19,
+        "cls": 0
+      }
+    },
+    {
+      "page": "Galerie",
+      "file": "gallery.html",
+      "before": {
+        "jsErrors": 1,
+        "descChars": 0,
+        "sideScroll": true,
+        "h1": 0,
+        "lcpMs": 920,
+        "loadMs": 16138.0,
+        "mb": 3.15,
+        "cls": 0
+      },
+      "after": {
+        "jsErrors": 0,
+        "descChars": 132,
+        "sideScroll": false,
+        "h1": 1,
+        "lcpMs": 880,
+        "loadMs": 2183.0,
+        "mb": 0.37,
+        "cls": 0
+      }
+    },
+    {
+      "page": "Kontakt",
+      "file": "contact.html",
+      "before": {
+        "jsErrors": 1,
+        "descChars": 140,
+        "sideScroll": true,
+        "h1": 1,
+        "lcpMs": 684,
+        "loadMs": 6033,
+        "mb": 1.14,
+        "cls": 0
+      },
+      "after": {
+        "jsErrors": 0,
+        "descChars": 140,
+        "sideScroll": false,
+        "h1": 1,
+        "lcpMs": 596,
+        "loadMs": 983.0,
+        "mb": 0.13,
+        "cls": 0
+      }
+    },
+    {
+      "page": "Reservierung",
+      "file": "reservierung.html",
+      "before": {
+        "jsErrors": 1,
+        "descChars": 0,
+        "sideScroll": true,
+        "h1": 0,
+        "lcpMs": 688,
+        "loadMs": 6032.0,
+        "mb": 1.13,
+        "cls": 0
+      },
+      "after": {
+        "jsErrors": 0,
+        "descChars": 112,
+        "sideScroll": false,
+        "h1": 1,
+        "lcpMs": 588,
+        "loadMs": 991.0,
+        "mb": 0.12,
+        "cls": 0
+      }
+    },
+    {
+      "page": "Impressum",
+      "file": "impressum.html",
+      "before": {
+        "jsErrors": 1,
+        "descChars": 0,
+        "sideScroll": true,
+        "h1": 0
+      },
+      "after": {
+        "jsErrors": 0,
+        "descChars": 50,
+        "sideScroll": false,
+        "h1": 1
+      }
+    },
+    {
+      "page": "Datenschutz",
+      "file": "datenschutz.html",
+      "before": {
+        "jsErrors": 1,
+        "descChars": 0,
+        "sideScroll": true,
+        "h1": 1
+      },
+      "after": {
+        "jsErrors": 0,
+        "descChars": 61,
+        "sideScroll": false,
+        "h1": 1
+      }
+    }
+  ],
+  "imageWeight": {
+    "beforeMB": 19.2,
+    "afterMB": 4.3,
+    "note": "Summe aller Bilddateien im Projekt: vorher 68 PNG/JPG-Dateien, jetzt WebP in passenden Größen (inkl. Handy- und Vorschau-Varianten). Pro Seitenaufruf wird davon nur ein kleiner Teil geladen."
+  },
+  "manualChecks": [
+    {
+      "item": "Alle Seiten auf 320, 390, 768 und 1366 px Breite: kein seitliches Scrollen, keine Konsolenfehler, keine fehlenden Dateien",
+      "status": "geprüft"
+    },
+    {
+      "item": "Speisekarte: 49 Gerichte, Preise identisch mit Original-Code und PDF-Karte",
+      "status": "geprüft"
+    },
+    {
+      "item": "Speisekarte und Startseite übernehmen geänderte Preise/Texte sofort aus den Datendateien",
+      "status": "geprüft"
+    },
+    {
+      "item": "Tastatur: Menü, Speisekarte (Kategorie öffnen, Karte drehen), Galerie-Lightbox, „Zum Inhalt springen“",
+      "status": "geprüft"
+    },
+    {
+      "item": "Farbkontraste aller Text-/Button-Kombinationen (WCAG AA)",
+      "status": "geprüft"
+    },
+    {
+      "item": "Strukturierte Daten (Restaurant, Speisekarte) sind gültiges JSON und enthalten Adresse, Öffnungszeiten, Preise",
+      "status": "geprüft"
+    },
+    {
+      "item": "Karte und Reservierungsformular laden nicht vor Klick/Zustimmung",
+      "status": "geprüft"
+    },
+    {
+      "item": "Verwaltung: Anmeldung, Preis ändern, Empfehlung setzen, Gericht ausblenden, Text und Öffnungszeit ändern, Prüfung auf fehlenden Preis, Veröffentlichen, Verlauf – gegen eine simulierte GitHub-Schnittstelle",
+      "status": "geprüft (simuliert)"
+    },
+    {
+      "item": "Verwaltung und automatische Veröffentlichung gegen das echte GitHub-Repository",
+      "status": "nicht ausgeführt"
+    },
+    {
+      "item": "Echtes Reservierungsformular (CentralPlanner) und Google-Maps-Anzeige",
+      "status": "nicht ausgeführt (Testumgebung ohne Internet)"
+    },
+    {
+      "item": "Safari/iPhone, Firefox, echte Android-Geräte",
+      "status": "nicht ausgeführt"
+    },
+    {
+      "item": "Google PageSpeed Insights / Lighthouse der Live-Seite",
+      "status": "nicht ausgeführt (Lighthouse in der Testumgebung nicht installierbar)"
+    },
+    {
+      "item": "Erreichbarkeit der externen Links (Uber Eats, Lieferando, Instagram, TikTok)",
+      "status": "nicht ausgeführt"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "hoch",
+      "text": "Impressum ergänzen: E-Mail-Adresse und Inhaber bzw. vertretungsberechtigte Person fehlen. Impressum und Datenschutzerklärung rechtlich prüfen lassen (kein Rechtsrat)."
+    },
+    {
+      "priority": "hoch",
+      "text": "Nach dem Hochladen in GitHub einmalig „Settings → Pages → Source: GitHub Actions“ einstellen, damit Änderungen aus der Verwaltung automatisch veröffentlicht werden."
+    },
+    {
+      "priority": "hoch",
+      "text": "PDF-Speisekarten bei Preisänderungen neu exportieren – sie werden nicht automatisch angepasst. Dabei „Kleinste Dateigröße“ wählen (aktuell 3,6 MB und 1,5 MB)."
+    },
+    {
+      "priority": "mittel",
+      "text": "GoatCounter-Konto anlegen und in der Verwaltung eintragen, damit Besucherzahlen und Klicks (Telefon, Reservierung, Lieferdienste) im Report erscheinen."
+    },
+    {
+      "priority": "mittel",
+      "text": "Nach dem Livegang PageSpeed Insights (pagespeed.web.dev) für Start- und Speisekarte prüfen und Ergebnis im nächsten Report festhalten."
+    },
+    {
+      "priority": "mittel",
+      "text": "Fehlende bzw. doppelte Gerichtfotos ergänzen: Mehrere Getränke teilen sich ein Foto (z. B. Teinacher 0,33/0,75 l), Eingangsfoto und Hero 3 liegen nur in geringer Auflösung vor."
+    },
+    {
+      "priority": "mittel",
+      "text": "Google-Unternehmensprofil pflegen (Öffnungszeiten, Fotos, Link zur Speisekarte) – wichtig für Suchen wie „uigurisches Restaurant Mannheim“."
+    },
+    {
+      "priority": "niedrig",
+      "text": "„Nachspeisen – bald verfügbar“ befüllen oder entfernen (in der Verwaltung unter Texte & Infos)."
+    }
+  ],
+  "nextSteps": [
+    "Projekt in GitHub hochladen und Pages auf „GitHub Actions“ umstellen",
+    "Verwaltung einmal mit dem echten Restaurant-Konto testen (Preis ändern → nach 1–2 Minuten online prüfen)",
+    "GoatCounter einrichten und nach vier Wochen den ersten Reichweiten-Report erstellen",
+    "Impressum/Datenschutz prüfen lassen, PDFs abgleichen"
+  ]
+}
